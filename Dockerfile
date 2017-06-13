@@ -11,4 +11,4 @@ WORKDIR /data
 
 EXPOSE 1313
 
-ENTRYPOINT ["/usr/bin/hugo"]
+ENTRYPOINT ["/usr/local/sbin/hugo"]
