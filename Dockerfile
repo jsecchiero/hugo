@@ -7,4 +7,8 @@ RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /tmp \
     && mv /tmp/hugo /usr/local/sbin/hugo \
     && rm -rf /tmp/hugo_${HUGO_VERSION}_linux_amd64
 
+WORKDIR /data
+
+EXPOSE 1313
+
 ENTRYPOINT ["/usr/bin/hugo"]
